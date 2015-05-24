@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+<android.support.v7.widget.CardView
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:elevation="30dp"
+    card_view:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.loopj.android.image.SmartImageView
+                android:layout_width="match_parent"
+                android:layout_height="265dp"
+                android:id="@+id/mainImageView"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_drawer"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="10dp"
+                        android:layout_weight=".5"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:text="Design Title"
+                        android:id="@+id/mainTitleTextView"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="10dp"
+                        android:layout_weight=".5"
+                        android:textStyle="normal"
+                        android:textSize="10dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Designer's Name"
+                        android:id="@+id/mainNameTextView"/>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:orientation="horizontal">
+
+                   <Button
+                       android:layout_width="35dp"
+                       android:layout_height="35dp"
+                       android:id="@+id/likeButtonMain"
+                       android:background="@drawable/ic_favorite"
+                       android:layout_weight=".5"
+                       style="?android:attr/borderlessButtonStyle"/>
+
+                    <Button
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:id="@+id/shareButtonMain"
+                        android:background="@drawable/ic_share"
+                        android:layout_weight=".5"
+                        style="?android:attr/borderlessButtonStyle"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    <com.anatoliyadamitskiy.airball.RoundedCornersSmartImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:id="@+id/avatarImageView"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"/>
+
+</android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Widget Configuration" >
+
+        <ListPreference
+            android:key="3x2_PREF"
+            android:summary="Choose category to display in widget."
+            android:title="Category"
+            android:entries="@array/cat_array"
+            android:entryValues="@array/cat_values" />
+
+    </PreferenceCategory>
+</PreferenceScreen>
